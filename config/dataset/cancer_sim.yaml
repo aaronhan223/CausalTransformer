@@ -2,7 +2,7 @@
 dataset:
   _target_: src.data.SyntheticCancerDatasetCollection   # Will be dynamically instantiated
   name: tumor_generator
-  coeff: ???                                            # Confounding coefficient (gamma)
+  coeff: 1.0                                            # Confounding coefficient (gamma)
   chemo_coeff: ${dataset.coeff}                         # Confounding coefficient of chemotherapy
   radio_coeff: ${dataset.coeff}                         # Confounding coefficient of radiotherapy
   seed: ${exp.seed}
